@@ -1,2 +1,25 @@
-@import './common';
-@import './example';
+// modern-normalize
+@import './common/common';
+
+// Fonts
+
+@import './fonts/fonts';
+
+// Utils
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+// Base
+
+@import './base/base';
+@import './base/reset';
+
+// Container
+
+@import './common/container';
+
+// Layout
+@import './layout/ex';
