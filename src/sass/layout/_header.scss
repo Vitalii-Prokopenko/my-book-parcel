@@ -1,0 +1,16 @@
+/* Header */
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  border-radius: 0px 0px 8px 8px;
+  border: 1.5px solid #111;
+
+  background: #fff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

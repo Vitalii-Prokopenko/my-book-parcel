@@ -38,6 +38,152 @@
   margin: -1px;
 }
 
+/* == BASIC PAGE STYLES == */
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+/* == GLOBAL STYLES RESET == */
+/* headings and paragraphs */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ul */
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* button */
+.btn {
+  cursor: pointer;
+}
+
+/* responsive images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* a */
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* address */
+.address {
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+@media screen and (max-width: 374px) {
+  .container {
+    padding: 0 20px;
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    padding: 0 32px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 24px;
+    width: 1440px;
+  }
+}
+
 p {
   font-family: "DM Sans", sans-serif;
+}
+
+/* Header */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo__icon:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Theme switcher */
+.theme-switcher {
+  margin-right: 14px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.theme-switcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.theme-switcher input:checked + .slider {
+  background: linear-gradient(180deg, #4F2EE8 0%, #686868 100%);
+}
+.theme-switcher input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.theme-switcher .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #4F2EE8 0%, #dcdcdc 100%);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 20px;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-switcher .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 1px;
+  bottom: 1px;
+  background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+}
+
+/* Menu toggle */
+.menu-toggle:hover .menu-toggle__icon {
+  stroke: red;
 }/*# sourceMappingURL=index.css.map */

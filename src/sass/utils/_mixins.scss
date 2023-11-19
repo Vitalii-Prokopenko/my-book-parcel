@@ -1,0 +1,79 @@
+// Mixin for styles for mobile phone
+
+@mixin mobile {
+    @media screen and (min-width: $mobile) and (max-width: calc($tablet - 1px)) {
+      @content;
+    }
+  }
+  
+  // Mixin for styles for tablet
+  
+  @mixin tablet {
+    @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+      @content;
+    }
+  }
+  
+  // Mixin for styles for desktop
+  
+  @mixin desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+  
+  // Mixin for common styles for mobile phone and tablet
+  
+  @mixin mobile-and-tablet {
+    @media screen and (min-width: $mobile) and (max-width: calc($desktop - 1px)) {
+      @content;
+    }
+  }
+  
+  // Mixin for common styles for tablet and desktop
+  
+  @mixin tablet-and-desktop {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  // Mixin for styles for screens less than mobile phone
+  
+  @mixin less-then-mobile {
+    @media screen and (max-width: calc($mobile - 1px)) {
+      @content;
+    }
+  }
+  
+  // Mixin for styles for screens less than tablet
+  
+  @mixin less-then-tablet {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      @content;
+    }
+  }
+  
+  // Mixin for styles for screens less than desktop
+  
+  @mixin less-then-desktop {
+    @media screen and (max-width: calc($desktop - 1px)) {
+      @content;
+    }
+  }
+  
+  // Mixin for transitions
+  
+  @mixin myTransition($property) {
+    transition: $property $transitionTime $transitionFunction;
+  }
+  
+  // Mixin for pixel-ratio-media-queries
+  
+  @mixin pixel-ratio-2x {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      @content;
+    }
+  }

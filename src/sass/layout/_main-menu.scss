@@ -1,0 +1,38 @@
+/* Main menu */
+.main-menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+    border-radius: 36px;
+    color: $darkColor;
+  }
+
+    &__icon {
+    margin-left: 4px;
+  }
+}
+
+.current {
+    background-color: $hoverColor;
+}

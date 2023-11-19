@@ -1,0 +1,38 @@
+/* User bar */
+.user-bar {
+  &__btn {
+    padding: 4px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 184px;
+    height: 45px;
+    border: none;
+    border-radius: 36px;
+    background-color: $accentColor;
+  }
+
+  &__avatar-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: $lightColor;
+  }
+
+  &__avatar {    
+    // border-radius: 50%;
+    // background-color: $lightColor;
+  }
+
+  &__name {
+    font-family: $mainFont;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.44px;
+    color: $lightColor;
+  }
+}

@@ -1,0 +1,12 @@
+/* Sign up button */
+.sign-up {
+  &__btn {
+    @extend %user-btn;
+    background-color: $accentColor;
+  }
+
+  &__text {
+    @extend %user-text;
+    color: $lightColor;
+  }
+}

@@ -1,0 +1,15 @@
+/* Menu toggle */
+.menu-toggle {
+  @extend %btn-icons;  
+  width: 28px;
+  height: 28px;
+  
+  &__icon {
+    stroke: $darkColor;
+    @include myTransition(stroke);
+  }
+
+  &:hover &__icon {
+    stroke: $accentColor;
+  }
+}

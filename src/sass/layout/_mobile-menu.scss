@@ -1,0 +1,43 @@
+/* Mobile menu */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  z-index: -1;
+
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  background-image: image-set(
+      url(../images/books/books.webp),
+      url(../images/books/books.png)
+    ),
+    radial-gradient(
+      183.6% 183.01% at 59.76% -23.42%,
+      $accentColor 18.03%,
+      $lightColor 100%
+    );
+
+  @include pixel-ratio-2x {
+    background-image: image-set(
+        url(../images/books/books-@2x.webp),
+        url(../images/books/books-@2x.png)
+      ),
+      radial-gradient(
+        183.6% 183.01% at 59.76% -23.42%,
+        $accentColor 18.03%,
+        $lightColor 100%
+      );
+  }
+
+  transform: translateX(100%);
+  @include myTransition(transform);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}

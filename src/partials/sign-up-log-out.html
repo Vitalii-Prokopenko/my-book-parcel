@@ -1,0 +1,32 @@
+<button class="btn sign-up__btn visually-hidden">
+  <span class="sign-up__text">Sing up</span>
+  <svg class="menu-toggle__icon menu__open" width="20" height="20">
+    <use href="./images/icons.svg#icon-arrow-right"></use>
+  </svg>
+</button>
+<!-- Drop down menu of loged in user -->
+<ul class="list dropdown__main visually-hidden">
+  <li class="dropdown__main-item">
+    <button type="button" class="btn dropdown__btn user-bar__btn">
+      <div class="user-bar__avatar-wrap">
+        <svg class="user-bar__avatar" width="19" height="19">
+          <use href="./images/icons.svg#icon-user"></use>
+        </svg>
+      </div>
+      <span class="user-bar__name">Stephen</span>
+      <svg class="dropdown__icon user-bar__icon" width="23" height="26">
+        <use href="./images/icons.svg#icon-caret-down"></use>
+      </svg>
+    </button>
+    <ul class="list dropdown__list">
+      <li class="dropdown__item log-out">
+        <button type="button" class="btn log-out__btn">
+          <span class="log-out__text">Log out</span>
+          <svg class="log-out__icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,16 +1,29 @@
-// .container {
-//     margin: 0 auto;
-  
-//     //   width 320px - 1259px
-//     @include mobile {
-//       padding: 0 20px;
-//       max-width: $maxMobile;
-//       min-width: $mobile;
-//     }
-  
-//     // width 1260px +
-//     @include desktop {
-//       padding: 0 120px;
-//       min-width: $desktop;
-//     }
-// }
+.container {
+  margin: 0 auto;
+  min-width: $minMobile;
+  outline: 1px solid red;
+
+  // width 320px - 374px
+  @include less-then-mobile {
+    padding: 0 20px;
+    max-width: calc($mobile - 1px);
+  }
+
+  // width = 375px - 767px
+  @include mobile {
+    padding: 0 20px;
+    max-width: calc($tablet - 1px);
+  }
+
+  // width = 768px - 1439 px
+  @include tablet {
+    padding: 0 32px;
+    max-width: calc($desktop - 1px);
+  }
+
+  // width = 1440px +
+  @include desktop {
+    padding: 0 24px;
+    max-width: 100%;
+  }
+}

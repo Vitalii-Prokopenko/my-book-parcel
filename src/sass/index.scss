@@ -12,10 +12,11 @@
 @import './utils/mixins';
 @import './utils/placeholders';
 
-// Base
+// Base and reset
 
 @import './base/base';
 @import './base/reset';
+
 
 // Container
 
@@ -23,3 +24,12 @@
 
 // Layout
 @import './layout/ex';
+@import './layout/header';
+@import './layout/logo';
+@import './layout/main-menu';
+@import './layout/theme-switcher';
+@import './layout/menu-toggle';
+@import './layout/sign-up';
+@import './layout/user-bar';
+@import './layout/log-out';
+@import './layout/mobile-menu';

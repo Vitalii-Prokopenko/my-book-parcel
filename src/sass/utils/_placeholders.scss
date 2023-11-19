@@ -1,0 +1,28 @@
+// Sign-up / Log-out button
+%user-btn {
+  padding: 15px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 184px;
+  height: 48px;
+  border-radius: 18px;
+  border: 1.5px solid $darkColor;
+}
+
+%user-text {
+  font-family: $mainFont;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(18px / 14px);
+  letter-spacing: -0.56px;
+}
+
+// Buttons with icons
+%btn-icons {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}

@@ -1,0 +1,12 @@
+/* Sign up button */
+.log-out {
+  &__btn {
+    @extend %user-btn;
+    background-color: $lightColor;
+  }
+
+  &__text {
+    @extend %user-text;
+    color: $darkColor;
+  }
+}
